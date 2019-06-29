@@ -10,7 +10,7 @@ body {
 
 .buy {
     width: 100%;
-    padding: 50px;
+    padding: 50px 150px 50px 50px;
     display: flex; /* выравниваем все в ряд*/
     flex-wrap: wrap; /*разрешите перенос блоков*/
     justify-content: space-between; /*позволяет расположить элементы равномерно друг от друга*/
@@ -27,24 +27,63 @@ body {
 }
 
 .buy-item {
-    width: 25%;
-    padding: 20px;
+    width: 300px;
+    padding: 16px 20px 20px 20px;
     box-sizing: border-box;
-    background-color: yellowgreen;
-    border: 1px solid green;
-}
-
-body > div > section > div:nth-child(2) {
-    height: 306px; 
-    align-self: flex-end; /*прикрепляет блоки книзу*/
-}
-
-body > div > section > div:nth-child(3) {
-    height: 404px;
     align-self: flex-end;
+    background-color: #445162;
+    border-radius: 3px;
 }
 
-body > div > section > div:nth-child(4) {
-    height: 499px;
-    align-self: flex-end;
+.buy-item .hf {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 0 0 16px 0;
+}
+
+.buy-price {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color:#445162;
+    font-size:40px;
+    padding: 18px 0 18px 0;
+    background-color: #FFFFFF;
+}
+
+.buy-item ol {
+    width: 100%;
+    display: block;
+    color:#FFFFFF;
+    font-size: 14px;
+    line-height: 25px;
+    margin-block-start: 18px;
+    padding-inline-start: 20px;
+}
+
+.buy-item a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 13px 0 13px 0;
+    color:#445161;
+    background-color:#FFFFFF;
+    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    font-weight: 600; /* Жирное начертание */
+}
+
+.buy-item a:hover {
+    font-weight: normal;
+}
+
+.buy-item a:active {
+    color: black;
 }
