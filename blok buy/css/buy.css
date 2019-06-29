@@ -1,0 +1,50 @@
+body {
+    width: 1280px;
+    margin: 0;
+}
+  
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.buy {
+    width: 100%;
+    padding: 50px;
+    display: flex; /* выравниваем все в ряд*/
+    flex-wrap: wrap; /*разрешите перенос блоков*/
+    justify-content: space-between; /*позволяет расположить элементы равномерно друг от друга*/
+    box-sizing: border-box; /*изменяет поведение блочной модели*/
+    border: 2px solid black;
+}
+
+.ht {
+    width: 100%;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.buy-item {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: yellowgreen;
+    border: 1px solid green;
+}
+
+body > div > section > div:nth-child(2) {
+    height: 306px; 
+    align-self: flex-end; /*прикрепляет блоки книзу*/
+}
+
+body > div > section > div:nth-child(3) {
+    height: 404px;
+    align-self: flex-end;
+}
+
+body > div > section > div:nth-child(4) {
+    height: 499px;
+    align-self: flex-end;
+}
