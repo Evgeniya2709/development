@@ -1,0 +1,92 @@
+body {
+    width: 1280px;
+    margin: 0;
+}
+  
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none; 
+}
+
+.ht {
+    display: block;
+    font-size: 30px;
+}
+
+.reviews {
+    width: 100%;
+    padding: 50px;
+    display: flex; /*все элементы выстроились в одну строку*/
+    flex-wrap: wrap; /*перенос блока на новую строку*/
+    box-sizing: border-box; /*изменяет поведение блочной модели*/
+    background-color: #F5F5F5;
+    border: 2px solid green;
+}
+
+.reviews .ht {
+    display: block; 
+    width: 100%; /*заголовок над всеми остаьными блоками*/
+    margin: 0 0 35px 0;
+    color:#445161;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+.reviews img {
+    width: 76px;
+    height: 76px;
+    display: inline-block;
+    margin: 0 0 0 31px;
+}
+
+body > div > section > img:nth-child(2),
+body > div > section > img:nth-child(6) {
+    margin: 0;
+}
+
+.reviews-item {
+    width: 470px;
+    min-height: 65px;
+    padding: 16px; /*отступы внутри блока*/
+    margin: 0 0 24px 20px;
+    box-sizing: border-box; /*в данном случае помогает убрать лишние пиксели у бордера*/
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    position: relative; /*работаем над расположением стрелочки*/
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+div:nth-child(7),
+div:nth-child(9) {
+    margin: 0 0 0 20px;
+}
+
+.reviews-item::before {
+    content: "";
+    top: 29px;
+    left: -22px;
+    border: 13px solid transparent;
+    border-right: 10px solid #EBEBEB;
+    position: absolute; /*работаем над расположением стрелочки*/
+}
+
+.reviews-item p {
+    margin: 0; /*удаляем отступы у параграфа*/
+    font-style: italic;
+    color: #333333; 
+}
+
+.ab {
+    display: block; /*делаем элемент из строчного блочным*/
+    width: 100%; 
+    margin: 15px 0 0 0;
+    font-style: normal;
+    color: #989898;
+}
