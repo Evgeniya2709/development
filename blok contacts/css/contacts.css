@@ -1,0 +1,110 @@
+body {
+    width: 1280px;
+    margin: 0;
+}
+  
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contacts {
+    width: 100%;
+    padding: 50px 246px 50px 246px;
+    display: flex; /*все элементы выстроились в одну строку*/
+    flex-wrap: wrap; /*перенос блока на новую строку*/
+    box-sizing: border-box; /*изменяет поведение блочной модели*/
+    background-color: #445162;
+}
+
+.contacts .ht {
+    width: 100%; /*заголовок над всеми остаьными блоками*/
+    display: block;
+    margin: 0 0 30px 0;
+    color:#FFFFFF;
+    font-size: 30px;
+    text-align: center;
+}
+
+form {
+    width: 75%;
+    display: block;
+    float: left;
+}
+
+.contacts input {
+    width: 501px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #445162;
+    border-radius: 5px;
+}
+
+body > div > footer > form > input[type="text"]:nth-child(3) {
+    height: 171px;
+}
+
+body > div > footer > form > input[type="submit"]:nth-child(4) {
+    width: 141px;
+    font-weight: 600; /* Жирное начертание */
+    text-transform: uppercase;
+    margin: 0 180px;
+    background: #FFFFFF;
+}
+
+body > div > footer > form > input[type="submit"]:nth-child(4):hover {
+    background: rgb(172, 178, 179);
+}
+
+.mess {
+    width: 25%;
+    display: grid;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.skype::before {
+    content: url("../img/skype_icon.png");
+    margin: 0 6px 0 0;
+}
+
+.icq::before {
+    content: url("../img/icq_icon.png");
+    margin: 0 6px 0 0;
+}
+
+.email::before {
+    content: url("../img/email_icon.png");
+    margin: 0 6px 0 0;
+}
+
+.tel::before {
+    content: url("../img/phone_icon.png");
+    margin: 0 6px 0 0;
+}
+
+.mess a {
+    float: left;
+    text-decoration: none; /* Убираем подчёркивание */
+}
+
+.mess1 {
+    background: url(../img/mess1.png) no-repeat;
+}
+
+.mess2 {
+    background: url(../img/mess2.png) no-repeat;
+}
+
+.mess3 {
+    background: url(../img/mess3.png) no-repeat;
+}
+
+.mess4 {
+    background: url(../img/mess4.png) no-repeat;
+}
+
+.mess5 {
+    background: url(../img/mess5.png) no-repeat;
+}
